@@ -10,7 +10,7 @@ def test_root():
 def test_create_todo():
     response = client.post("/todos",json={
         "id":1,
-        "title":"Learn CI/CD"
+        "title":"Learn CI/CD",
         "completed": False
     })
     assert response.status_code == 220
